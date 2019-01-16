@@ -115,11 +115,11 @@
                         <div class="footer-title"><h4>OUR SERVICES</h4></div>
                         <img src="images/foot.jpg">
                         <ul class="list-unstyled">
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">ORDER HISTORY</a></li>
-                            <li><a href="#">RETURNS</a></li>
+                            <li><a href="about.php">ABOUT US</a></li>
+                            <li><a href="contact.php">CONTACT US</a></li>
+                             <li><a href="customer_login.php">USER LOGIN</a></li>
                             <li><a href="service.php">CUSTOM SERVICE</a></li>
-                            <li><a href="#">TERMS & CONDITIONS</a></li>
+                         
                         </ul>
                     </div>
                 </div>
@@ -131,10 +131,10 @@
                         <div class="footer-title"><h4>FOLLOW US</h4></div>
                         <img src="images/foot.jpg">
                         <ul class="list-unstyled">
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Google +</a></li>
-                            <li><a href="#">Linked In</a></li>
-                            <li><a href="#">Facebook</a></li>
+                            <li><a href="https://twitter.com/">Twitter</a></li>
+                        <li><a href="https://accounts.google.com/">Google +</a></li>
+                            <li><a href="https://np.linkedin.com/">Linked In</a></li>
+                            <li><a href="https://facebook.com/">Facebook</a></li>
                         </ul>
                     </div>
                 </div>
