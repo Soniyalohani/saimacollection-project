@@ -82,7 +82,7 @@ include("include/connect.php");
   $_SESSION['customer_email']=$c_email; 
   
   echo "<script>alert('login successful!')</script>";
-echo "<script>window.open('shop.php?logged_in=You have successfully Logged in!','_self')</script>";
+echo "<script>window.open('index.php?logged_in=You have successfully Logged in!','_self')</script>";
   }
   else {
   

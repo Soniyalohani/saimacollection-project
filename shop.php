@@ -55,7 +55,7 @@ if(isset($_GET["action"]))
 			{
 				unset($_SESSION["shopping_cart"][$keys]);
 				echo '<script>alert("Item Removed")</script>';
-				echo '<script>window.location="shoppingcart.php"</script>';
+			echo '<script>window.location="order_detail.php"</script>';
 			}
 		}
 	}
@@ -70,7 +70,7 @@ if(isset($_GET["action"]))
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="home.html"><img src="images/s.jpg"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/s.jpg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

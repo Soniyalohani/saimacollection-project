@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <?php include('include/main.php');?>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -118,7 +118,7 @@
                             <li><a href="#">ABOUT US</a></li>
                             <li><a href="#">ORDER HISTORY</a></li>
                             <li><a href="#">RETURNS</a></li>
-                            <li><a href="#">CUSTOM SERVICE</a></li>
+                            <li><a href="service.php">CUSTOM SERVICE</a></li>
                             <li><a href="#">TERMS & CONDITIONS</a></li>
                         </ul>
                     </div>

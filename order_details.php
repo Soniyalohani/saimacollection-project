@@ -1,10 +1,9 @@
 <?php
     session_start();
 ?>
+
 <!DOCTYPE html>
 <?php include('include/main.php');?>
-
-
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="home.html"><img src="images/s.jpg"></a>
@@ -39,19 +38,19 @@
     </div>
   </header>
 <body>
-
-<body>
     <div class="container-fluid">
           <h1 class="text-warning text-center" style="margin-top:95px;">ORDER DETAIL</h1><br><br>
             <table id="tabledata" class=" table table-striped table-hover table-bordered">
              <tr>
+                <!--<th width="5%">S.N</th>-->
                 <th width="40%">Item Name</th>
                 <th width="10%">Quantity</th>
                 <th width="20%">Price</th>
                 <th width="15%">Total</th>
                 <th width="5%">Action</th>
             </tr>
-            <?php
+             <?php
+
                     if(!empty($_SESSION["shopping_cart"]))
                     {
                         $total = 0;
@@ -64,6 +63,7 @@
 
                     ?>
             <tr>
+                
                 <td>
                     <?php echo $values["item_name"]; ?>
                 </td>
@@ -76,7 +76,7 @@
                 <td>Rs
                     <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?>
                 </td>
-                <td><a href="index.php?action=delete&id=<?php echo $values[" item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
+                <td><a href="order_details.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
             </tr>
             <?php
                             $total = $total + ((int)$values["item_quantity"] * (int)$values["item_price"]);
@@ -87,7 +87,7 @@
                 <td align="right">Rs.
                     <?php echo number_format($total, 2); ?>
                 </td>
-                <td></td>
+              <td></td>
             </tr>
             <?php
                     }
@@ -99,8 +99,7 @@
     </div>
     </div>
     </div>
-
-    <br />
+    
 </body>
-
 </html>
+
